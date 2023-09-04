@@ -71,7 +71,7 @@ body {
     margin-top: 15rem;
 
     @media screen and (max-width: 800px) {
-        margin-top: 15vh;
+        margin-top: 20vh;
 
     }
 }
@@ -168,7 +168,6 @@ body {
     text-align: center;
     align-items: center;
     justify-content: space-between;
-    text-decoration: none;
 
     @media screen and (max-width:900px) {
         width: 80%;
@@ -178,7 +177,7 @@ body {
 }
 
 #journey-text {
-    width: 60%;
+    width: 50%;
     font-family: monospace;
     color: white;
     font-size: 1.3vw;
@@ -304,12 +303,13 @@ ul {
 .input {
     width: 35vw;
     height: 5vh;
+    min-height: 2.5rem;
     border-radius: 7px;
     border: none;
 
     @media screen and (max-width:900px) {
         font-size: 3vw;
-        width: 55vw;
+        width: 65vw;
     }
 }
 
@@ -322,10 +322,11 @@ ul {
     width: 35vw;
     height: 15vh;
     border-radius: 7px;
+    min-height: 5rem;
 
     @media screen and (max-width:900px) {
         font-size: 3vw;
-        width: 55vw;
+        width: 65vw;
     }
 }
 
@@ -341,6 +342,7 @@ ul {
     background-color: orange;
     font-size: 2vw;
     min-width: 150px;
+    min-height: 2.5rem;
 
     &:hover {
         background-color: rgb(249, 194, 92);
@@ -560,5 +562,4 @@ ul {
     100% {
         opacity: 100;
     }
-}
 }

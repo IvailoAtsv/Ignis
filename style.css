@@ -282,13 +282,12 @@ ul {
     position: relative;
     left: 50%;
     transform: translate(-50%);
-    height: 60vh;
+    height: auto;
     color: white;
 }
 
 #form {
     margin-bottom: 4rem;
-
 }
 
 .form-pair {

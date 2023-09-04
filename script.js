@@ -4,6 +4,9 @@ const gmail = document.getElementById('gmail');
 const whatsapp = document.getElementById('whatsapp')
 const title = document.getElementById('coolText')
 const slogan = document.getElementById('slogan')
+const mainTitle = document.querySelectorAll('.title')
+const heroText = document.getElementById('hero-text')
+const filters = document.getElementById('filters')
 
 instagram.addEventListener('click', () => {
     window.location.href = 'https://www.instagram.com/ignis_limitless/'
@@ -75,17 +78,23 @@ let isDone = false;
 let canContinue = true;
 function addText() {
     if (isDone) {
-        document.getElementById('hero-text').removeChild(elts.text1)
-        document.getElementById('hero-text').removeChild(elts.text2)
-        document.getElementById('hero-text').removeChild(document.getElementById('filters'))
-        document.querySelectorAll('.title').forEach(e => e.classList.replace('hidden', 'pop-in'))
-        slogan.classList.replace('hidden', 'pop-in')
-
+        if (heroText.hasChildNodes(elts.text1)) {
+            heroText.removeChild(elts.text1)
+        }
+        if (heroText.hasChildNodes(elts.text2)) {
+            heroText.removeChild(elts.text2)
+        }
+        if (heroText.hasChildNodes(filters)) {
+            heroText.removeChild(filters)
+        }
+        if (mainTitle) {
+            mainTitle.forEach(e => e.classList.replace('hidden', 'pop-in'))
+            slogan.classList.replace('hidden', 'pop-in')
+        }
     }
 }
 
 function animate() {
-    if (canContinue) requestAnimationFrame(animate);
 
     let newTime = new Date();
     let shouldIncrementIndex = cooldown > 0;
@@ -107,5 +116,6 @@ function animate() {
         canContinue = false
     }
     addText()
+    if (canContinue) requestAnimationFrame(animate);
 }
 animate();

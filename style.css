@@ -238,6 +238,7 @@ ul {
 }
 
 .card {
+    padding: 2rem 1rem;
     border-radius: 7px;
     height: auto;
     background-color: rgb(48, 48, 48);

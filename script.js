@@ -20,22 +20,13 @@ const elts = {
 
 const texts = [
     '',
-    "Are",
-    "You",
-    "Tired",
-    "Of",
-    "Seeing",
-    "No",
-    "Results",
-    "?",
-    "We",
-    "Can",
-    "Help",
+    "Are you tired of not seeing results?",
+    "We can help",
     ''
 ];
 
-const morphTime = 0.5;
-const cooldownTime = 0.1;
+const morphTime = 1;
+const cooldownTime = 0.3;
 
 let textIndex = texts.length - 1;
 let time = new Date();

@@ -17,7 +17,7 @@ body {
     justify-content: center;
     overflow: hidden;
 
-    @media screen and (max-width:800px) {
+    @media screen and (max-width:900px) {
         font-size: 3vw;
         background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url('images/hero2.png');
         background-attachment: fixed;
@@ -188,7 +188,7 @@ body {
     align-items: center;
     justify-content: space-between;
 
-    @media screen and (max-width:800px) {
+    @media screen and (max-width:900px) {
         font-size: 3vw;
         width: 80%;
         flex-direction: column;
@@ -201,7 +201,7 @@ body {
     border: solid 0.35rem #dcdcdc;
     aspect-ratio: 1 / 1;
 
-    @media screen and (max-width:800px) {
+    @media screen and (max-width:900px) {
         font-size: 3vw;
         width: 50vw;
     }
@@ -223,7 +223,7 @@ body {
     color: white;
     font-size: 1.5vw;
 
-    @media screen and (max-width:800px) {
+    @media screen and (max-width:900px) {
         font-size: 3vw;
         width: 80%;
     }
@@ -246,7 +246,7 @@ body {
     justify-content: space-between;
     text-decoration: none;
 
-    @media screen and (max-width:800px) {
+    @media screen and (max-width:900px) {
         width: 80%;
         font-size: 2vw;
         flex-direction: column-reverse;
@@ -260,7 +260,7 @@ body {
     font-size: 1.3vw;
     text-align: justify;
 
-    @media screen and (max-width:800px) {
+    @media screen and (max-width:900px) {
         font-size: 3vw;
         width: 80%;
         margin-right: 2rem;
@@ -278,7 +278,7 @@ body {
     justify-content: space-between;
     align-items: center;
 
-    @media screen and (max-width:800px) {
+    @media screen and (max-width:900px) {
         width: 80%;
         font-size: 2vw;
         flex-direction: column;
@@ -299,7 +299,7 @@ ul {
     display: flex;
     justify-content: space-around;
 
-    @media screen and (max-width:800px) {
+    @media screen and (max-width:900px) {
         font-size: 3vw;
         flex-direction: column;
         gap: 2rem;
@@ -321,7 +321,7 @@ ul {
     justify-content: space-evenly;
     align-items: center;
 
-    @media screen and (max-width:800px) {
+    @media screen and (max-width:900px) {
         font-size: 3vw;
         width: 55vw;
     }
@@ -330,7 +330,7 @@ ul {
 .card-text {
     width: 80%;
 
-    @media screen and (max-width:800px) {
+    @media screen and (max-width:900px) {
         font-size: 3vw;
         width: 95%;
     }
@@ -340,7 +340,7 @@ ul {
     width: 10vw;
     height: auto;
 
-    @media screen and (max-width:800px) {
+    @media screen and (max-width:900px) {
         font-size: 3vw;
         width: 15vw;
     }
@@ -377,7 +377,7 @@ ul {
     border-radius: 7px;
     border: none;
 
-    @media screen and (max-width:800px) {
+    @media screen and (max-width:900px) {
         font-size: 3vw;
         width: 55vw;
     }
@@ -393,7 +393,7 @@ ul {
     height: 15vh;
     border-radius: 7px;
 
-    @media screen and (max-width:800px) {
+    @media screen and (max-width:900px) {
         font-size: 3vw;
         width: 55vw;
     }
@@ -438,7 +438,7 @@ ul {
     justify-content: space-between;
     align-items: center;
 
-    @media screen and (max-width:800px) {
+    @media screen and (max-width:900px) {
         flex-direction: column;
     }
 }
@@ -450,7 +450,7 @@ ul {
     justify-content: space-between;
     gap: 3rem;
 
-    @media screen and (max-width:800px) {
+    @media screen and (max-width:900px) {
         flex-direction: column;
         margin-top: 2rem;
         margin-bottom: 2rem;
@@ -528,7 +528,7 @@ ul {
     font-size: 2vw;
     min-width: 150px;
 
-    @media screen and (max-width:800px) {
+    @media screen and (max-width:900px) {
         width: 55vw;
     }
 

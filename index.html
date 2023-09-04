@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ignis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- HERO -->
+    <div id="hero">
+        <div id="hero-text">
+            <span id="text1"></span>
+            <span id="text2"></span>
+            <svg id="filters">
+                <defs>
+                    <filter id="threshold">
+                        <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
+                              0 1 0 0 0
+                              0 0 1 0 0
+                              0 0 0 255 -140" />
+                    </filter>
+                </defs>
+            </svg>
+            <div class="content" id="coolText">
+                <h2 class="hidden title">Ignis</h2>
+                <h2 class="hidden title">Ignis</h2>
+            </div>
+            <P class="hidden" id="slogan">Ignite your inner fire</P>
+        </div>
+    </div>
+
+    <div id="my-mission">
+        <img src="images/my-mission.jpg" class="img-in-div" alt="mission">
+        <div class="move-in-right" id="mission-text">
+            <h2 class="title-color">My mission</h2>
+            <p>
+                My passion for fitness and diverse training background have equipped me with the knowledge and skills to
+                help you reach your fitness goals, no matter where you're starting from. Let's embark on this journey
+                together and unlock your full potential.
+            </p>
+        </div>
+    </div>
+    <!-- MY JOURNEY -->
+    <div id="my-journey">
+        <div class="move-in-left" id="journey-text">
+            <h2 class="title-color">My Journey</h2>
+            <p>
+            <ul>
+                <li>
+                    <p class="accent-color">Gym & calithenics (7years):
+                    <p> My foundation in strength and body control comes from years of dedicated
+                        gym and calisthenics training
+                </li>
+
+                <li>
+                    <p class="accent-color">
+                        Karate (7 years):
+                    <p> Karate taught me discipline, focus and the importance of mental and physical
+                        balance.
+                </li>
+                <li>
+                    <p class="accent-color">
+                        Boxing & Kickboxing (1 year):
+                    <p> I recently added combat sports to my repertoire in order to enhance my
+                        cardiovascular endurance and self-defence skills.
+                </li>
+                <li>
+                    <p class="accent-color">
+                        Bouldering (1 year):
+                    <p> I embraced the challenge of indoor bouldering to enhance my grip strength and
+                        problem-solving skills.
+                </li>
+
+                <li>
+                    <p class="accent-color">
+                        Hiking:
+                    <p> Exploring my home country's mountains has always been a passion of mine. In
+                        the period of June-July
+                        2023 alone, I covered more than 420 km on foot, conquering peaks over 2200 meters in height,
+                        including Cherni vruh(2260m) and Vruh Ruen (2252m).
+                </li>
+            </ul>
+            </p>
+        </div>
+        <img src="images/my-journey.jpg" class="img-in-div" alt="journey">
+    </div>
+
+    <!-- ABOUT ME -->
+    <div id="about-me">
+        <img src="images/lubo.jpg" class="img-in-div" alt="mission">
+        <div class="move-in-right" id="mission-text">
+            <h2 class="title-color">About me</h2>
+            <p>
+                My passion for fitness and diverse training background have equipped me with the knowledge and skills to
+                help you reach your fitness goals, no matter where you're starting from. Let's embark on this journey
+                together and unlock your full potential.
+            </p>
+        </div>
+    </div>
+    <!-- SERVICES -->
+    <h2 class="title-color">Services</h2>
+    <div id="services">
+        <div class="card move-in-right">
+            <img src="images/dumbbell.png" class="services-img" alt="dumbell">
+            <p class="card-text">Unique workouts accustomed to your available equipment</p>
+        </div>
+        <div class="card move-in-right">
+            <img src="images/workout.png" class="services-img" alt="dumbell">
+            <p class="card-text">Individual goal oriented training plans</p>
+        </div>
+        <div class="card move-in-right">
+            <img src="images/pizza.png" class="services-img" alt="dumbell">
+            <p class="card-text">Custom tailored meal plans according to your food preferences and budget</p>
+        </div>
+    </div>
+
+    <div id="contact-me">
+        <h2 class="title-color move-in-right">Contact me</h2>
+        <form action="https://formsubmit.co/ignis_limitless@gmail.com" method="post" class="move-in-left" id="form">
+            <div class="form-pair">
+                <label class="label" for="name">Name:</label>
+                <input class="input" placeholder="Name" required type="name" name="name">
+            </div>
+            <div class="form-pair">
+                <label class="label" for="email">Email:</label>
+                <input class="input" placeholder="Email adress" type="email" name="email">
+            </div>
+            <div class="form-pair">
+                <label class="label" for="question">Message:</label>
+                <textarea class="input" name="question" placeholder="Your message or question" required id="question"
+                    cols="30" rows="10"></textarea>
+            </div>
+            <input type="submit" class="submit">
+        </form>
+    </div>
+
+    <div id="footer-wrapper">
+        <div id="footer">
+            <!-- logo and social media icons -->
+            <div id="socials">
+                <img id="logo" src="icons/logo.png" alt="logo">
+                <div id="icons">
+                    <div class="footer-pair" id="gmail">
+                        <img class="footer-icon" src="icons/email-128.png" alt="logo">
+                        <p>ignis_limitless@gmail.com</p>
+                    </div>
+                    <div class="footer-pair" id="instagram">
+                        <img class="footer-icon" src="icons/instagram-128.png" alt="logo">
+                        <p>ignis_limitless</p>
+
+                    </div>
+                    <div class="footer-pair" id="whatsapp">
+                        <img class="footer-icon" src="icons/whatsapp-128.png" alt="logo">
+                        <p>+359884760051</p>
+                    </div>
+                </div>
+            </div>
+            <div id="newsletter">
+                <form action="https://formsubmit.co/ignis_limitless@gmail.com" method="post" id="newsletter-email">
+                    <label class="label-nl" for="email">Subscribe to our newsletter!</label>
+                    <input class="input" type="text" placeholder="Email adress" name="email">
+                </form>
+                <button class="submit-nl" id="newsletter-btn">Subscribe</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

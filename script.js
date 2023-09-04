@@ -81,7 +81,7 @@ function doCooldown() {
     elts.text1.style.opacity = "0%";
 }
 let isDone = false;
-
+let canContinue = true;
 function addText() {
     if (isDone) {
         document.getElementById('hero-text').removeChild(elts.text1)
@@ -89,11 +89,12 @@ function addText() {
         document.getElementById('hero-text').removeChild(document.getElementById('filters'))
         document.querySelectorAll('.title').forEach(e => e.classList.replace('hidden', 'pop-in'))
         slogan.classList.replace('hidden', 'pop-in')
+
     }
 }
 
 function animate() {
-    requestAnimationFrame(animate);
+    if (canContinue) requestAnimationFrame(animate);
 
     let newTime = new Date();
     let shouldIncrementIndex = cooldown > 0;
@@ -112,6 +113,7 @@ function animate() {
     }
     if (textIndex > (texts.length * 2) - 2) {
         isDone = true
+        canContinue = false
     }
     addText()
 }

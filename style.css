@@ -448,8 +448,9 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+    gap: 1rem;
 }
 
 .footer-icon {
@@ -485,11 +486,13 @@ body {
 }
 
 #newsletter {
+    height: 100%;
     display: flex;
     flex-direction: column;
     color: white;
     justify-content: center;
     align-items: center;
+    gap: 1rem;
     margin-bottom: 2rem;
 }
 

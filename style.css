@@ -239,7 +239,7 @@ ul {
 
 .card {
     border-radius: 7px;
-    height: 30vh;
+    height: auto;
     background-color: rgb(48, 48, 48);
     width: 20vw;
     max-width: 300px;
@@ -421,6 +421,10 @@ ul {
 #logo {
     width: 15vw;
     height: auto;
+
+    @media screen and (max-width: 900px) {
+        display: none;
+    }
 }
 
 #logo-div {

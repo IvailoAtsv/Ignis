@@ -1,14 +1,15 @@
+
 const instagram = document.getElementById('instagram');
 const gmail = document.getElementById('gmail');
 const whatsapp = document.getElementById('whatsapp')
 const title = document.getElementById('coolText')
 const slogan = document.getElementById('slogan')
 
-instagram.addEventListener('click', (e) => {
+instagram.addEventListener('click', () => {
     window.location.href = 'https://www.instagram.com/ignis_limitless/'
 })
 
-whatsapp.addEventListener('click', (e) => {
+whatsapp.addEventListener('click', () => {
     window.location.href = 'https://wa.me/359884760051'
 })
 

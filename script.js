@@ -24,11 +24,12 @@ const elts = {
 const texts = [
     '',
     "Are you tired of not seeing results?",
+    '',
     "We can help",
     ''
 ];
 
-const morphTime = 2;
+const morphTime = 1;
 const cooldownTime = 0.7;
 
 let textIndex = texts.length - 1;
@@ -54,11 +55,14 @@ function doMorph() {
 }
 
 function setMorph(fraction) {
-    elts.text2.style.filter = `blur(${Math.min(8 / fraction - 8, 100)}px)`;
+    // blur effect on animation
+    //boss said me no likey
+    // elts.text2.style.filter = `blur(${Math.min(8 / fraction - 8, 100)}px)`;
     elts.text2.style.opacity = `${Math.pow(fraction, 0.5) * 100}%`;
 
     fraction = 1 - fraction;
-    elts.text1.style.filter = `blur(${Math.min(8 / fraction - 8, 100)}px)`;
+    //same blur effect
+    // elts.text1.style.filter = `blur(${Math.min(8 / fraction - 8, 100)}px)`;
     elts.text1.style.opacity = `${Math.pow(fraction, 0.5) * 100}%`;
 
     elts.text1.textContent = texts[textIndex % texts.length];

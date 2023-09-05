@@ -43,7 +43,7 @@ body {
     display: inline-block;
 
     font-size: 8vw;
-    color: white;
+    color: orange;
     text-align: center;
 
     user-select: none;
@@ -77,7 +77,7 @@ body {
 }
 
 .content h2 {
-    color: #fff;
+    color: white;
     font-size: 8vw;
     position: absolute;
     left: 50%;

@@ -28,8 +28,8 @@ const texts = [
     ''
 ];
 
-const morphTime = 1;
-const cooldownTime = 0.3;
+const morphTime = 2;
+const cooldownTime = 0.7;
 
 let textIndex = texts.length - 1;
 let time = new Date();

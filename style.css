@@ -33,7 +33,12 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
+    gap: 2rem;
     justify-content: center;
+
+    @media screen and(max-width:900px) {
+        width: 100%;
+    }
 }
 
 #hero {
@@ -245,7 +250,18 @@ ul {
 #services {
     flex-wrap: wrap;
     width: 80%;
-    margin-top: 3rem;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+
+    @media screen and (max-width:900px) {
+        font-size: 3vw;
+        gap: 2rem;
+        align-items: center;
+    }
+}
+
+#cards {
     display: flex;
     justify-content: space-around;
 
@@ -298,7 +314,6 @@ ul {
 }
 
 #contact-me {
-    margin-top: 4rem;
     width: 50%;
     height: auto;
     color: white;
@@ -466,7 +481,7 @@ ul {
     flex-direction: column;
     color: white;
     justify-content: center;
-    align-items: center;
+    align-items: baseline;
     gap: 1rem;
     margin-bottom: 2rem;
 }
@@ -505,6 +520,12 @@ ul {
     margin-bottom: 1rem;
     font-size: 3vw;
     text-align: center;
+    font-size: 3vw;
+
+    @media screen and (max-width:900px) {
+        font-size: 5vw;
+
+    }
 }
 
 .move-in-right {

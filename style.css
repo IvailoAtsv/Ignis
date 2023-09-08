@@ -4,6 +4,26 @@ body {
     margin: 0;
 }
 
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #323232;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #ff7818;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #fdaf50;
+}
+
+
 #main-body {
     width: 100%;
     height: 100%;
@@ -171,6 +191,7 @@ body {
     text-align: center;
     align-items: center;
     justify-content: space-between;
+    gap: 5vw;
 
     @media screen and (max-width:900px) {
         width: 80%;
@@ -180,7 +201,6 @@ body {
 }
 
 #journey-text {
-    width: 60%;
     font-family: monospace;
     color: white;
     font-size: 1.3vw;

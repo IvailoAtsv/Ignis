@@ -7,7 +7,7 @@ const slogan = document.getElementById('slogan')
 const mainTitle = document.querySelectorAll('.title')
 const heroText = document.getElementById('hero-text')
 const filters = document.getElementById('filters')
-
+const scrollIcon = document.getElementById('scroll');
 instagram.addEventListener('click', () => {
     window.location.href = 'https://www.instagram.com/ignis_limitless/'
 })
@@ -94,6 +94,7 @@ function addText() {
         if (mainTitle) {
             mainTitle.forEach(e => e.classList.replace('hidden', 'pop-in'))
             slogan.classList.replace('hidden', 'pop-in')
+            scrollIcon.classList.replace('hidden', 'pop-in')
         }
     }
 }
